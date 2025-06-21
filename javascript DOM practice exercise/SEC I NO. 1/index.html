@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Style Changer</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <h2>Customize the Text Style</h2>
+
+  <div class="control-group">
+    <label for="fontSize">Font Size:</label>
+    <select id="fontSize" onchange="updateStyle()">
+      <option value="14px">14px</option>
+      <option value="16px" selected>16px</option>
+      <option value="20px">20px</option>
+      <option value="24px">24px</option>
+      <option value="30px">30px</option>
+    </select>
+  </div>
+
+  <div class="control-group">
+    <label for="fontColor">Font Color:</label>
+    <select id="fontColor" onchange="updateStyle()">
+      <option value="black" selected>Black</option>
+      <option value="red">Red</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+      <option value="purple">Purple</option>
+    </select>
+  </div>
+
+  <div class="control-group">
+    <label for="fontFamily">Font Family:</label>
+    <select id="fontFamily" onchange="updateStyle()">
+      <option value="Arial" selected>Arial</option>
+      <option value="'Courier New', Courier, monospace">Courier New</option>
+      <option value="'Times New Roman', Times, serif">Times New Roman</option>
+      <option value="'Georgia', serif">Georgia</option>
+      <option value="'Verdana', sans-serif">Verdana</option>
+    </select>
+  </div>
+
+  <div id="text-block">
+    This is a sample text. Use the dropdowns above to change its style.
+  </div>
+<script src="./script.js"></script>
+ 
+</body>
+</html>

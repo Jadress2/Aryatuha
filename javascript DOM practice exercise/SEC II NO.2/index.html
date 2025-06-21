@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Table Filter</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<h2>Search Table</h2>
+
+<input type="text" id="searchInput" placeholder="Search for names..." onkeyup="filterTable()">
+
+<table id="dataTable">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Country</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John Doe</td>
+      <td>28</td>
+      <td>USA</td>
+    </tr>
+    <tr>
+      <td>Mary Smith</td>
+      <td>34</td>
+      <td>Canada</td>
+    </tr>
+    <tr>
+      <td>Linda Johnson</td>
+      <td>45</td>
+      <td>UK</td>
+    </tr>
+    <tr>
+      <td>Michael Brown</td>
+      <td>22</td>
+      <td>Australia</td>
+    </tr>
+  </tbody>
+</table>
+
+<script src="./script.js"></script>
+
+</body>
+</html>
